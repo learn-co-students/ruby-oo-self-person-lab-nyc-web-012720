@@ -102,10 +102,10 @@ RSpec.describe 'Person' do
 
     describe '#happy?' do
       it 'returns true if happiness is greater than seven, else false' do
-        penelope.happiness = 7
-        expect(penelope.happy?).to eq(false)
         penelope.happiness = 8
         expect(penelope.happy?).to eq(true)
+        penelope.happiness = 0
+        expect(penelope.happy?).to eq(false)
       end
     end
 
